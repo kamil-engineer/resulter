@@ -10,7 +10,68 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Results summary component</title>
+    <meta
+      name="description"
+      content="A clean and responsive results summary component built as part of a learning process. Showcasing modern HTML, CSS, and responsive design skills."
+    />
+
+    <meta property="og:title" content="Tests summary | Resulter" />
+    <meta
+      property="og:description"
+      content="A clean and responsive results summary component built as part of a learning process. Showcasing modern HTML, CSS, and responsive design skills."
+    />
+    <meta
+      property="og:image"
+      content="https://kamil-engineer.github.io/resulter/assets/images/preview.png"
+    />
+    <meta
+      property="og:url"
+      content="https://kamil-engineer.github.io/resulter/"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tests summary | Resulter" />
+    <meta
+      name="twitter:description"
+      content="A clean and responsive results summary component built as part of a learning process. Showcasing modern HTML, CSS, and responsive design skills."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kamil-engineer.github.io/resulter/assets/images/preview.png"
+    />
+
+    <title>Tests summary | Resulter</title>
+
+    <link
+      rel="preload"
+      href="assets/fonts/HankenGrotesk-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="content">
+      <div class="wrapper">
+        <article class="results">
+          <div class="results__summary summary">
+            <h2 class="results__title">Your Result</h2>
+            <div class="results__value-box">
+              <strong class="results__value">76</strong>
+              <span class="results__of">of 100</span>
+            </div>
+            <p class="results__feedback">Great</p>
+            <p class="results__description">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+          <div class="results__overview">OVERVIEW</div>
+        </article>
+      </div>
+    </div>
+  </body>
 </html>
