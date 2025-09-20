@@ -13,7 +13,7 @@
   --color-navy-950: #303b59;
   --color-navy-200: #cac9ff;
   --color-navy-50: #ecf2ff;
-  --color-blue-800: #1125d6;
+  --color-blue-400: #1125d6;
   --color-blue-50: #f3f4fd;
   --color-yellow-400: #ffb21e;
   --color-yellow-50: #fffbf4;
@@ -34,7 +34,7 @@
   --fs-xl: 1.875rem; /* 30px */
   --fs-2xl: 2.25rem; /* 36px */
   --fs-3xl: 3rem; /* 48px */
-  --fs-4xl: 3.75rem; /* 60px */
+  --fs-4xl: 3.5rem; /* 56px */
   --fs-5xl: 4.5rem; /* 72px */
 
   --space-1: 0.25rem; /* 4px */
@@ -82,6 +82,7 @@ body {
   display: flex;
   align-items: center;
   height: 32rem;
+  box-shadow: 0 30px 60px rgba(61, 108, 236, 0.15);
 }
 
 .results > * {
@@ -282,4 +283,87 @@ body {
 .btn--continue:hover,
 .btn--continue:focus {
   background-image: var(--color-gradient-secondary);
+}
+
+@media (max-width: 46rem) {
+  .content {
+    align-items: start;
+    background-color: var(--color-neutral);
+  }
+
+  .wrapper {
+    --max-width: 23.4375rem;
+  }
+
+  .results {
+    box-shadow: 0;
+    height: auto;
+    flex-direction: column;
+    gap: var(--space-5);
+    border-radius: 0;
+  }
+
+  .summary {
+    flex-basis: 22.25rem;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .summary__content {
+    max-height: 18.25rem;
+  }
+
+  .overview__content {
+    max-width: 19.6875rem;
+    max-height: 24.9375rem;
+  }
+
+  .overview__item-content {
+    max-width: 17.6875rem;
+  }
+
+  .overview__value-title {
+    font-size: var(--fs-sm);
+  }
+
+  .results__title,
+  .overview__title {
+    font-size: var(--fs-md);
+    margin-bottom: var(--space-5);
+  }
+
+  .results__value-box {
+    --size: 8.75rem;
+    margin: 0 auto var(--space-5);
+  }
+
+  .results__value {
+    font-size: var(--fs-4xl);
+  }
+
+  .results__of {
+    font-size: var(--fs-sm);
+  }
+
+  .results__feedback {
+    font-size: var(--fs-lg);
+  }
+
+  .results__description {
+    font-size: var(--fs-sm);
+  }
+
+  .results__overview {
+    width: 100%;
+  }
+
+  .overview__value,
+  .overview__of {
+    font-size: var(--fs-sm);
+  }
+
+  .overview__list {
+    margin-bottom: var(--space-5);
+  }
 }
